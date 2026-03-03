@@ -277,7 +277,8 @@ p { color: var(--mid); font-size: 0.98rem; line-height: 1.75; }
 }
 
 .logo-img {
-  height: 44px;
+  margin-top: 30%;
+  height: 150px;
   width: auto;
   max-width: 180px;
   object-fit: contain;
