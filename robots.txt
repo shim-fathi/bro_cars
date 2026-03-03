@@ -1,0 +1,32 @@
+# ============================================
+# robots.txt — France VTC
+# https://www.francevtc.com
+# ============================================
+
+# Allow all well-behaved search engine crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location — critical for Google indexing
+Sitemap: https://www.francevtc.com/sitemap.xml
+
+# Allow Googlebot specifically
+User-agent: Googlebot
+Allow: /
+
+# Allow Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Block bad bots and scrapers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

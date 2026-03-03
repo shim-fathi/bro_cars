@@ -1,0 +1,43 @@
+{
+  "name": "France VTC — Premium Paris Chauffeur Service",
+  "short_name": "France VTC",
+  "description": "Premium VTC chauffeur service in Paris. CDG & Orly airport transfers, Disneyland Paris VTC, corporate and long distance VTC France.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2D0660",
+  "theme_color": "#4A0E8F",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "logo.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["travel", "transportation", "business"],
+  "shortcuts": [
+    {
+      "name": "Call to Book",
+      "url": "tel:+33614332708",
+      "description": "Call France VTC directly"
+    },
+    {
+      "name": "Our Services",
+      "url": "/services.html",
+      "description": "View all VTC Paris services"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact.html",
+      "description": "Contact France VTC"
+    }
+  ]
+}

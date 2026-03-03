@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Browse Bro Cars' full inventory — luxury sedans, SUVs, electric cars, sports coupes, all certified."/>
+  <title>Our Cars — Bro Cars</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="Bro Cars" class="logo-img"/>
+      <span class="logo-text">BRO<span class="logo-accent">CARS</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="cars.html" class="nav-link active">Our Cars</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="cars.html" class="btn-nav">View Cars →</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg-text">FLEET</div>
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="page-breadcrumb"><a href="index.html">Home</a> <span>/</span> Our Cars</div>
+      <h1 class="page-hero-title">Our Full<br/><span>Fleet.</span></h1>
+      <p class="page-hero-sub">80+ certified vehicles — every one inspected, every one priced honestly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <div class="container">
+    <div class="filter-inner">
+      <span class="filter-label">Filter by:</span>
+      <div class="filter-btns" id="filterBtns">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="sedan">Sedan</button>
+        <button class="filter-btn" data-filter="suv">SUV</button>
+        <button class="filter-btn" data-filter="coupe">Coupe</button>
+        <button class="filter-btn" data-filter="electric">Electric</button>
+        <button class="filter-btn" data-filter="hatch">Hatchback</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CARS INVENTORY -->
+<section class="section" style="padding-top:3rem;">
+  <div class="container">
+    <div class="cars-grid cars-grid-full" id="carsGrid">
+
+      <article class="car-card reveal" data-category="sedan">
+        <div class="car-img-box">
+          <div class="car-img-inner"><img src="https://www.bing.com/th/id/OIP.yj8fTOcMCOOPCfj33jafrAHaEd?w=248&h=211&c=8&rs=1&qlt=90&r=0&o=6&dpr=1.5&pid=3.1&rm=2"></div>
+          <div class="car-overlay"><a href="contact.html" class="btn-overlay">Book Now</a></div>
+          <div class="car-badge">Popular</div>
+        </div>
+        <div class="car-info">
+          <div class="car-meta"><span class="car-year">2023</span><span class="car-type">Sedan</span></div>
+          <h3 class="car-name">Mercedes E300</h3>
+          <p class="car-desc">AMG Line · Burmester Audio · MBUX infotainment · Full leather. Showroom condition.</p>
+          <div class="car-specs-row">
+            <span class="spec-tag">2.0T</span><span class="spec-tag">Auto</span><span class="spec-tag">22,000km</span>
+          </div>
+          <div class="car-footer">
+            <div class="car-price">Rs. 18,500,000</div>
+            <div class="car-actions-row">
+              <a href="contact.html" class="btn-card-ghost">View Details</a>
+              <a href="contact.html" class="btn-card-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="car-card reveal" data-category="suv">
+        <div class="car-img-box">
+          <div class="car-img-inner"><span class="car-emoji">🚙</span></div>
+          <div class="car-overlay"><a href="contact.html" class="btn-overlay">Book Now</a></div>
+          <div class="car-badge new-badge">New</div>
+        </div>
+        <div class="car-info">
+          <div class="car-meta"><span class="car-year">2024</span><span class="car-type">SUV</span></div>
+          <h3 class="car-name">BMW X5 M Sport</h3>
+          <p class="car-desc">xDrive AWD · Panoramic roof · Harman Kardon · 360° cameras · Apple CarPlay.</p>
+          <div class="car-specs-row">
+            <span class="spec-tag">3.0T</span><span class="spec-tag">AWD</span><span class="spec-tag">9,800km</span>
+          </div>
+          <div class="car-footer">
+            <div class="car-price">Rs. 29,000,000</div>
+            <div class="car-actions-row">
+              <a href="contact.html" class="btn-card-ghost">View Details</a>
+              <a href="contact.html" class="btn-card-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="car-card reveal" data-category="electric">
+        <div class="car-img-box">
+          <div class="car-img-inner"><span class="car-emoji">⚡</span></div>
+          <div class="car-overlay"><a href="contact.html" class="btn-overlay">Book Now</a></div>
+          <div class="car-badge eco-badge">EV</div>
+        </div>
+        <div class="car-info">
+          <div class="car-meta"><span class="car-year">2023</span><span class="car-type">Electric</span></div>
+          <h3 class="car-name">Tesla Model 3 LR</h3>
+          <p class="car-desc">560km range · Full Self-Driving · Over-the-air updates · White premium interior.</p>
+          <div class="car-specs-row">
+            <span class="spec-tag">Dual Motor</span><span class="spec-tag">AWD</span><span class="spec-tag">14,200km</span>
+          </div>
+          <div class="car-footer">
+            <div class="car-price">Rs. 22,000,000</div>
+            <div class="car-actions-row">
+              <a href="contact.html" class="btn-card-ghost">View Details</a>
+              <a href="contact.html" class="btn-card-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="car-card reveal" data-category="suv">
+        <div class="car-img-box">
+          <div class="car-img-inner"><span class="car-emoji">🚐</span></div>
+          <div class="car-overlay"><a href="contact.html" class="btn-overlay">Book Now</a></div>
+          <div class="car-badge">Premium</div>
+        </div>
+        <div class="car-info">
+          <div class="car-meta"><span class="car-year">2024</span><span class="car-type">SUV</span></div>
+          <h3 class="car-name">Land Cruiser 300</h3>
+          <p class="car-desc">Twin-turbo V6 · Multi-Terrain Monitor · 8-seat · Ventilated seats · Head-up display.</p>
+          <div class="car-specs-row">
+            <span class="spec-tag">3.5TT</span><span class="spec-tag">4WD</span><span class="spec-tag">6,800km</span>
+          </div>
+          <div class="car-footer">
+            <div class="car-price">Rs. 48,000,000</div>
+            <div class="car-actions-row">
+              <a href="contact.html" class="btn-card-ghost">View Details</a>
+              <a href="contact.html" class="btn-card-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="car-card reveal" data-category="coupe">
+        <div class="car-img-box">
+          <div class="car-img-inner"><span class="car-emoji">🏎️</span></div>
+          <div class="car-overlay"><a href="contact.html" class="btn-overlay">Book Now</a></div>
+          <div class="car-badge">Sport</div>
+        </div>
+        <div class="car-info">
+          <div class="car-meta"><span class="car-year">2023</span><span class="car-type">Coupe</span></div>
+          <h3 class="car-name">Audi A5 Sportback</h3>
+          <p class="car-desc">quattro AWD · Virtual Cockpit Pro · Matrix LED · 245hp 7-speed S-Tronic.</p>
+          <div class="car-specs-row">
+            <span class="spec-tag">2.0T</span><span class="spec-tag">quattro</span><span class="spec-tag">14,200km</span>
+          </div>
+          <div class="car-footer">
+            <div class="car-price">Rs. 21,500,000</div>
+            <div class="car-actions-row">
+              <a href="contact.html" class="btn-card-ghost">View Details</a>
+              <a href="contact.html" class="btn-card-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="car-card reveal" data-category="hatch">
+        <div class="car-img-box">
+          <div class="car-img-inner"><span class="car-emoji">🚗</span></div>
+          <div class="car-overlay"><a href="contact.html" class="btn-overlay">Book Now</a></div>
+          <div class="car-badge">Hot</div>
+        </div>
+        <div class="car-info">
+          <div class="car-meta"><span class="car-year">2024</span><span class="car-type">Hatchback</span></div>
+          <h3 class="car-name">VW Golf GTI Mk8</h3>
+          <p class="car-desc">245hp · 7-speed DSG · IQ.DRIVE safety suite · Full digital cockpit. Mint condition.</p>
+          <div class="car-specs-row">
+            <span class="spec-tag">2.0T</span><span class="spec-tag">DSG</span><span class="spec-tag">9,300km</span>
+          </div>
+          <div class="car-footer">
+            <div class="car-price">Rs. 14,500,000</div>
+            <div class="car-actions-row">
+              <a href="contact.html" class="btn-card-ghost">View Details</a>
+              <a href="contact.html" class="btn-card-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="car-card reveal" data-category="sedan">
+        <div class="car-img-box">
+          <div class="car-img-inner"><span class="car-emoji">🚘</span></div>
+          <div class="car-overlay"><a href="contact.html" class="btn-overlay">Book Now</a></div>
+          <div class="car-badge new-badge">New</div>
+        </div>
+        <div class="car-info">
+          <div class="car-meta"><span class="car-year">2024</span><span class="car-type">Sedan</span></div>
+          <h3 class="car-name">Lexus ES 300h</h3>
+          <p class="car-desc">Hybrid · Mark Levinson audio · 12.3" touchscreen · Head-up display · Smooth CVT.</p>
+          <div class="car-specs-row">
+            <span class="spec-tag">Hybrid</span><span class="spec-tag">FWD</span><span class="spec-tag">7,100km</span>
+          </div>
+          <div class="car-footer">
+            <div class="car-price">Rs. 19,800,000</div>
+            <div class="car-actions-row">
+              <a href="contact.html" class="btn-card-ghost">View Details</a>
+              <a href="contact.html" class="btn-card-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="car-card reveal" data-category="coupe">
+        <div class="car-img-box">
+          <div class="car-img-inner"><span class="car-emoji">🏎️</span></div>
+          <div class="car-overlay"><a href="contact.html" class="btn-overlay">Book Now</a></div>
+          <div class="car-badge">Beast</div>
+        </div>
+        <div class="car-info">
+          <div class="car-meta"><span class="car-year">2023</span><span class="car-type">Coupe</span></div>
+          <h3 class="car-name">BMW M4 Competition</h3>
+          <p class="car-desc">503hp · 0–100 in 3.9s · Carbon fibre trim · M seats · Full M spec. Track-ready beast.</p>
+          <div class="car-specs-row">
+            <span class="spec-tag">3.0T I6</span><span class="spec-tag">RWD</span><span class="spec-tag">18,000km</span>
+          </div>
+          <div class="car-footer">
+            <div class="car-price">Rs. 38,500,000</div>
+            <div class="car-actions-row">
+              <a href="contact.html" class="btn-card-ghost">View Details</a>
+              <a href="contact.html" class="btn-card-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <!-- No results message -->
+    <div class="no-results" id="noResults" style="display:none;">
+      <div class="no-results-icon">🔍</div>
+      <h3>No vehicles in this category right now.</h3>
+      <p>Check back soon or <a href="contact.html">contact us</a> to request a specific model.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-bg-text">FIND</div>
+  <div class="container">
+    <div class="cta-inner reveal">
+      <h2 class="cta-title">Can't Find<br/><span>What You Need?</span></h2>
+      <p class="cta-sub">Tell us the exact spec and we'll source it from our verified network within 14 days.</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn-primary">Make an Enquiry</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="logo.png" alt="Bro Cars" class="logo-img"/>
+            <span class="logo-text">BRO<span class="logo-accent">CARS</span></span>
+          </a>
+          <p>Sri Lanka's most trusted premium car dealership since 2012.</p>
+          <div class="footer-socials">
+  <a href="#" class="social-btn">
+    <i class="fa-brands fa-facebook-f"></i>
+  </a>
+
+  <a href="#" class="social-btn">
+    <i class="fa-brands fa-linkedin-in"></i>
+  </a>
+
+  <a href="#" class="social-btn">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <a href="#" class="social-btn">
+    <i class="fa-brands fa-youtube"></i>
+  </a>
+</div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cars.html">Our Cars</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Vehicle Sales</a></li>
+            <li><a href="services.html">Leasing</a></li>
+            <li><a href="services.html">Trade-In</a></li>
+            <li><a href="services.html">Financing</a></li>
+            <li><a href="services.html">Inspection</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact-col">
+          <h4>Get In Touch</h4>
+          <div class="footer-contact-item"><span class="fc-icon">📍</span><span>No. 45, Duplication Rd, Colombo 03</span></div>
+          <div class="footer-contact-item"><span class="fc-icon">📞</span><span>+94 11 234 5678</span></div>
+          <div class="footer-contact-item"><span class="fc-icon">✉️</span><span>info@brocars.lk</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2025 Bro Cars (Pvt) Ltd. All rights reserved.</span>
+      <span>Crafted for speed &amp; precision.</span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contact Bro Cars — visit our Colombo showroom, call us, or send a message. We respond within 2 hours."/>
+  <title>Contact — Bro Cars</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="Bro Cars" class="logo-img"/>
+      <span class="logo-text">BRO<span class="logo-accent">CARS</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="cars.html" class="nav-link">Our Cars</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+      <a href="cars.html" class="btn-nav">View Cars →</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg-text">HELLO</div>
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="page-breadcrumb"><a href="index.html">Home</a> <span>/</span> Contact</div>
+      <h1 class="page-hero-title">Let's<br/><span>Talk.</span></h1>
+      <p class="page-hero-sub">Questions, test drives, valuations — we're here. Always.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- INFO PANEL -->
+      <div class="contact-info-panel reveal">
+        <div class="section-tag">Our Details</div>
+        <h2 class="section-title" style="font-size:2.5rem;">Visit &<br/><span class="text-silver">Call Us</span></h2>
+        <div class="divider-line"></div>
+
+        <div class="contact-info-blocks">
+          <div class="ci-block">
+            <div class="ci-icon">📍</div>
+            <div>
+              <div class="ci-label">Showroom</div>
+              <div class="ci-val">No. 45, Duplication Road<br/>Colombo 03, Sri Lanka</div>
+            </div>
+          </div>
+          <div class="ci-block">
+            <div class="ci-icon">📞</div>
+            <div>
+              <div class="ci-label">Phone</div>
+              <div class="ci-val">+94 11 234 5678<br/>+94 77 890 1234 (WhatsApp)</div>
+            </div>
+          </div>
+          <div class="ci-block">
+            <div class="ci-icon">✉️</div>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-val">info@brocars.lk<br/>sales@brocars.lk</div>
+            </div>
+          </div>
+          <div class="ci-block">
+            <div class="ci-icon">🕐</div>
+            <div>
+              <div class="ci-label">Hours</div>
+              <div class="ci-val">Mon–Fri: 8:30am – 6:00pm<br/>Saturday: 9:00am – 4:00pm<br/>Sunday: By Appointment</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="response-guarantee">
+          <div class="rg-icon">⚡</div>
+          <div>
+            <div class="rg-title">2-Hour Response Guarantee</div>
+            <div class="rg-sub">All enquiries answered within 2 business hours. Urgent? Call directly or message on WhatsApp.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="contact-form-panel reveal">
+        <div class="form-header">
+          <div class="section-tag">Send a Message</div>
+          <h3 class="form-title">Make an Enquiry</h3>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="fname">Full Name *</label>
+              <input type="text" id="fname" name="fname" class="form-input" placeholder="Your full name" required autocomplete="name"/>
+              <span class="form-err">Please enter your name.</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="fphone">Phone Number</label>
+              <input type="tel" id="fphone" name="fphone" class="form-input" placeholder="+94 XX XXX XXXX" autocomplete="tel"/>
+              <span class="form-err">Enter a valid phone number.</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="femail">Email Address *</label>
+            <input type="email" id="femail" name="femail" class="form-input" placeholder="your@email.com" required autocomplete="email"/>
+            <span class="form-err">Please enter a valid email.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fsubject">Subject</label>
+            <input type="text" id="fsubject" name="fsubject" class="form-input" placeholder="Vehicle enquiry / Test drive / Financing..."/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fmsg">Message *</label>
+            <textarea id="fmsg" name="fmsg" class="form-input form-textarea" placeholder="Tell us what you're looking for — vehicle model, budget, questions..." required></textarea>
+            <span class="form-err">Please enter your message.</span>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span class="btn-submit-text">Send Message →</span>
+            <span class="btn-submit-loading" style="display:none;">Sending...</span>
+          </button>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <div class="form-success-icon">✅</div>
+          <h3>Message Sent!</h3>
+          <p>Thank you for reaching out. A member of our team will respond within 2 business hours.</p>
+          <a href="cars.html" class="btn-primary" style="margin-top:1.5rem;">Browse Our Cars →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<div class="map-section">
+  <div class="container">
+    <div class="map-header reveal">
+      <div class="section-tag">Find Us</div>
+      <h3 class="map-title">Visit Our Showroom</h3>
+    </div>
+    <div class="map-wrap reveal">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.798927977!2d79.85695!3d6.914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25963120b1509%3A0x2db2c18a68712863!2sColombo%2003%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk"
+        title="Bro Cars Showroom — Colombo 03"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="logo.png" alt="Bro Cars" class="logo-img"/>
+            <span class="logo-text">BRO<span class="logo-accent">CARS</span></span>
+          </a>
+          <p>Sri Lanka's most trusted premium car dealership since 2012.</p>
+          <div class="footer-socials">
+  <a href="#" class="social-btn">
+    <i class="fa-brands fa-facebook-f"></i>
+  </a>
+
+  <a href="#" class="social-btn">
+    <i class="fa-brands fa-linkedin-in"></i>
+  </a>
+
+  <a href="#" class="social-btn">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <a href="#" class="social-btn">
+    <i class="fa-brands fa-youtube"></i>
+  </a>
+</div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cars.html">Our Cars</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Vehicle Sales</a></li>
+            <li><a href="services.html">Leasing</a></li>
+            <li><a href="services.html">Trade-In</a></li>
+            <li><a href="services.html">Financing</a></li>
+            <li><a href="services.html">Inspection</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact-col">
+          <h4>Get In Touch</h4>
+          <div class="footer-contact-item"><span class="fc-icon">📍</span><span>No. 45, Duplication Rd, Colombo 03</span></div>
+          <div class="footer-contact-item"><span class="fc-icon">📞</span><span>+94 11 234 5678</span></div>
+          <div class="footer-contact-item"><span class="fc-icon">✉️</span><span>info@brocars.lk</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2025 Bro Cars (Pvt) Ltd. All rights reserved.</span>
+      <span>Crafted for speed &amp; precision.</span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
